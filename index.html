@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Food Stand Quality Check</title>
+</head>
+<body>
+    <div class="mainwrapper">
+    <header>
+        <img id="statefairlogo"/>
+        <h1>Food Stand Quality Check</h1>
+    </header>
+        <form action="">
+            <fieldset>
+                <label class="obscol-1"><strong>Day</strong></label>
+                <input type="text" class="obscol-1_2" name="Day" placeholder="Monday">
+                <label class="obscol-1"><strong>Date</strong></label>
+                <input type="date" class="obscol-1_2" name="Date">
+                <label class="obscol-1_2"><strong>Time of Check</strong></label>
+                <input type="time" class="obscol-1_2" name="Time">
+                <label class="obscol-2_1"><strong>Concessionaire</strong></label>
+                <input type="text" class="obscol-2_2" name="Concessionaire">
+                <label class="obscol-2_1"><strong>Location</strong></label>
+                <input type="text" class="obscol-2_2" name="Location">
+                <label class="obscol-2_1"><strong>Observer Name</strong></label>
+                <input type="text" class="obscol-2_2" name="Observer">
+            </fieldset>
+            <fieldset>
+                <legend><strong>Stand</strong></legend>
+                    <ol>
+                        <li class="stcol-1_1"><label>Stand Appearance (attractive &amp; clean)?</label></li>
+                        <div class="stcol-1_2">
+                            <input type="radio" name="Stand Appearance" value="yes">Yes
+                            <input type="radio" name="Stand Appearance" value="no">No*
+                        </div>
+                        <br>
+                        <li class="stcol-1_1"><label>Inside of stand clean?</label></li>
+                        <div class="stcol-1_2">
+                            <input type="radio" name="Inside clean?" value="yes">Yes
+                            <input type="radio" name="Inside clean?" value="no">No*
+                        </div>
+                        <br>
+                        <li class="stcol-1_1"><label>Condiment prep/storage area clean?</label></li>
+                        <div class="stcol-1_2">
+                            <input type="radio" name="Prep area clean?" value="yes">Yes
+                            <input type="radio" name="Prep area clean?" value="no">No*
+                        </div>
+                        <br>
+                        <li class="stcol-1_1"><label>Signage (Company name and menu clearly visible and professional)?</label></li>
+                        <div class="stcol-1_2">
+                            <input type="radio" name="Signage presentable?" value="yes">Yes
+                            <input type="radio" name="Signage presentable?" value="no">No*
+                        </div>
+                        <br>
+                        <li class="stcol-1_1"><label>Area around stand dry, clean, and unobstructed?</label></li>
+                        <div class="stcol-1_2">
+                            <input type="radio" name="Surroundings clean?" value="yes">Yes
+                            <input type="radio" name="Surroundings clean?" value="no">No*
+                        </div>
+                    </ol>
+            </fieldset>
+            <fieldset>
+                    <legend><strong>Operation</strong></legend>
+                    <ol>
+                        <li class="stcol-1_1"><label>Food properly stored and/or refrigerated?</label></li>
+                        <div class="stcol-1_2">
+                            <input type="radio" name="Food stored prop?" value="yes">Yes
+                            <input type="radio" name="Food stored prop?" value="no">No*
+                        </div>
+                        <br>
+                        <li class="stcol-1_1"><label>Sewage/proper disposal of waste water?</label></li>
+                        <div class="stcol-1_2">
+                            <input type="radio" name="Waste disposed?" value="yes">Yes
+                            <input type="radio" name="Waste disposed?" value="no">No*
+                        </div>
+                        <br>
+                        <li class="stcol-1_1"><label>Proper fly control and prevention?</label></li>
+                        <div class="stcol-1_2">
+                            <input type="radio" name="Fly Control?" value="yes">Yes
+                            <input type="radio" name="Fly Control?" value="no">No*
+                        </div>
+                        <br>
+                        <li class="stcol-1_1"><label>Business conducted within assigned space?</label></li>
+                        <div class="stcol-1_2">
+                            <input type="radio" name="Business in space?" value="yes">Yes
+                            <input type="radio" name="Business in space?" value="no">No*
+                        </div>
+                        <br>
+                        <li class="stcol-1_1"><label>Noise level reasonable?</label></li>
+                        <div class="stcol-1_2">
+                            <input type="radio" name="Noise reasonable?" value="yes">Yes
+                            <input type="radio" name="Noise reasonable?" value="no">No*
+                        </div>
+                    </ol>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Personnel</strong></legend>
+                    <ol>
+                        <li class="stcol-1_1"><label>Courteous?</label></li>
+                        <div class="stcol-1_2">
+                            <input type="radio" name="Courteous?" value="yes">Yes
+                            <input type="radio" name="Courteous?" value="no">No*
+                        </div>
+                        <br>
+                        <li class="stcol-1_1"><label>Properly attired?</label></li>
+                        <div class="stcol-1_2">
+                            <input type="radio" name="Proper attire?" value="yes">Yes
+                            <input type="radio" name="Proper attire?" value="no">No*
+                        </div>
+                        <br>
+                        <li class="stcol-1_1"><label>Smoking?</label></li>
+                        <div class="stcol-1_2">
+                            <input type="radio" name="Smoking?" value="yes">Yes*
+                            <input type="radio" name="Smoking?" value="no">No
+                        </div>
+                    </ol>
+            </fieldset>
+            <p><strong>*Please note in comments</strong></p>
+            <p>Did you note anything that merits special recogition while at the stand? If yes, please note in comments.</p>
+            <fieldset>
+                <legend><strong>Comments</strong></legend>
+                <label class="comcol-1_1">Actual number of sales handled during observation:</label>
+                <input type="number" class="comcol-1_2" name="Actual number of sales">
+                <label class="comcol-1_1">Specific items sold during observation:</label>
+                    <textarea rows="2" name="Specific items sold"></textarea>
+                <label class="comcol-1_1">Number of customers in line:</label>
+                <input type="number" class="comcol-1_2" name="Number of customers">
+                <label class="comcol-1_1">Comments:</label>
+                    <textarea rows="6" name="Comments"></textarea>
+                <label class="comcol-1_1">Submitted by:</label>
+                <input type="text" class="comcol-1_2" name="Submitted by">
+            </fieldset>
+            <div class="subbtn">
+                <input type="submit" value="Submit" class="fsqualsubbtn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
